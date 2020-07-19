@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Programming  for Kids</string>
+    <string name="start_learning">Start Learning</string>
+    <string name="code_with_faulukenyatm">Code with FauluKenyaTM</string>
+    <string name="programming_for_kids">Programming for kids</string>
+    <string name="quizes">Programming Questions</string>
+    <string name="type_your_name">Type your name</string>
+    <string name="answer_the_following_questions">Answer the following Questions</string>
+    <string name="type_your_answer">type your answer</string>
+    <string name="_1_what_is_the_output_of_the_following_code">1: What is the output of the following code</string>
+    <string name="print_4_2">print(4 * 2)</string>
+    <string name="a1">a++</string>
+    <string name="a2">++a</string>
+    <string name="a3">a+=a</string>
+    <string name="a">a=a+1</string>
+    <string name="_299">299</string>
+    <string name="_298">298</string>
+    <string name="_301">301</string>
+    <string name="_300">300</string>
+    <string name="_4_what_does_this_code_print">4: What does this code print?</string>
+    <string name="code">int n = 0; ++n; n++; System.out.print(n++);</string>
+    <string name="submit_answers">Submit answers</string>
+    <string name="answer_summary">answer Summary</string>
+</resources>
