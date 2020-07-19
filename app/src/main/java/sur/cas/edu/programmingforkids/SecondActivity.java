@@ -56,7 +56,7 @@ public class SecondActivity extends AppCompatActivity {
         int totalResults =
                 calculateResultQuestion2(answer1, checkBox1Answer, checkBox2Answer, checkBox3Answer,
                         checkBox4Answer, answer4);
-        String toastMessage = "Hello " + name + "your results are: " + totalResults;
+        String toastMessage = "Hello " + name + " your results are: " + totalResults;
         Toast.makeText(this, toastMessage, Toast.LENGTH_LONG).show();
 
         //display answers in a textView
@@ -148,14 +148,14 @@ public class SecondActivity extends AppCompatActivity {
                 if (checked)
                     // Pirates are the best
                     result = result + 10;
-                status = "correctly answered";
+                status = "is correctly answered";
                 break;
             case R.id.radioButton2:
             case R.id.radioButton3:
             case R.id.radioButton4:
                 if (checked)
                     // Ninjas rule
-                    status = "wrongly answered";
+                    status = "is wrongly answered";
                 break;
         }
 
