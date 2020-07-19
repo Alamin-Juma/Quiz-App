@@ -1,7 +1,5 @@
 package sur.cas.edu.programmingforkids;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
@@ -10,9 +8,12 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class SecondActivity extends AppCompatActivity {
     //global variable for result to be used inside many functions
-    int result = 0;
+    //In Java, when initializing a global variable of type int, by default, its value is 0.
+    int result;
     String status = "none";
 
     @Override
@@ -56,7 +57,7 @@ public class SecondActivity extends AppCompatActivity {
         int totalResults =
                 calculateResultQuestion2(answer1, checkBox1Answer, checkBox2Answer, checkBox3Answer,
                         checkBox4Answer, answer4);
-        String toastMessage = "Hello " + name + " your results are: " + totalResults;
+        String toastMessage = getString(R.string.greetings) + name + getString(R.string.resultMessage) + totalResults;
         Toast.makeText(this, toastMessage, Toast.LENGTH_LONG).show();
 
         //display answers in a textView
@@ -78,14 +79,13 @@ public class SecondActivity extends AppCompatActivity {
     private String showAnswers(String name, String answer1,
                                boolean checkBox1, boolean checkBox2, boolean checkBox3,
                                boolean checkBox4, int totalResults, String answer4, String status) {
-        return "Name: " + name + "  Total result: " + totalResults + "\n" +
-                "Answer1: " + answer1 + " " + status + "\n" +
-                "Answer2a: " + checkBox1 + " " + status + "\n" +
-                "Answer2b: " + checkBox2 + " " + status + "\n" +
-                "Answer2c: " + checkBox3 + " " + status + "\n" +
-                "Answer2d: " + checkBox4 + " " + status + "\n" +
-                "Answer4: " + checkBox4 + " " + status + "\n" +
-                "Answer4: " + answer4 + " " + status + "\n"
+        return getString(R.string.name) + name + getString(R.string.totalResult) + totalResults + "\n" +
+                getString(R.string.answer1) + answer1 + " " + status + "\n" +
+                getString(R.string.answer2a) + checkBox1 + " " + status + "\n" +
+                getString(R.string.answer2b) + checkBox2 + " " + status + "\n" +
+                getString(R.string.answer2c) + checkBox3 + " " + status + "\n" +
+                getString(R.string.answer2d) + checkBox4 + " " + status + "\n" +
+                getString(R.string.answer) + answer4 + " " + status + "\n"
                 ;
     }
 
@@ -128,9 +128,9 @@ public class SecondActivity extends AppCompatActivity {
         String answer1EditText = "8";
         if (answer1.equals(answer1EditText) && checkBox1 && checkBox2 && checkBox3 && checkBox4 &&
                 answer4.equals(answer4EditText)) {
-            status = "is correctly answered";
+            status = getString(R.string.correctMessage);
         } else {
-            status = "is wrongly answered";
+            status = getString(R.string.wrongAnswered);
         }
         return status;
     }
@@ -148,14 +148,14 @@ public class SecondActivity extends AppCompatActivity {
                 if (checked)
                     // Pirates are the best
                     result = result + 10;
-                status = "is correctly answered";
+                status = getString(R.string.correctMessage);
                 break;
             case R.id.radioButton2:
             case R.id.radioButton3:
             case R.id.radioButton4:
                 if (checked)
                     // Ninjas rule
-                    status = "is wrongly answered";
+                    status = getString(R.string.wrongAnswered);
                 break;
         }
 

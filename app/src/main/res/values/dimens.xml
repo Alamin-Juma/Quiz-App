@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="checkBox_TextSize">16sp</dimen>
+    <dimen name="paddingBottom">16dp</dimen>
+    <dimen name="padding_top">16dp</dimen>
+</resources>

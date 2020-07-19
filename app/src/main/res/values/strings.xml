@@ -21,4 +21,20 @@
     <string name="code">int n = 0; ++n; n++; System.out.print(n++);</string>
     <string name="submit_answers">Submit answers</string>
     <string name="answer_summary">answer Summary</string>
+    <string name="question_2">2: Select all valid ways to increment the value of n variable by 1.</string>
+    <string name="_3_given_the_following_code">3: Given the following code:</string>
+    <string name="Quiz3_code">int a = 300; int b = a++; int c = --b;</string>
+    <string name="Quiz3">What is the value of the variable c?</string>
+    <string name="greetings">Hello</string>
+    <string name="resultMessage">your results are:</string>
+    <string name="name">Name:</string>
+    <string name="totalResult">Total result:</string>
+    <string name="answer1">Answer 1:</string>
+    <string name="answer2a">Answer 2a:</string>
+    <string name="answer2b">Answer 2b:</string>
+    <string name="answer2c">Answer 2c:</string>
+    <string name="answer2d">Answer 2d:</string>
+    <string name="answer">Answer 4:</string>
+    <string name="correctMessage">is correctly answered</string>
+    <string name="wrongAnswered">is wrongly answered</string>
 </resources>
